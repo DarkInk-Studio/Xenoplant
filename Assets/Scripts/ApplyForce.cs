@@ -25,13 +25,19 @@ public class ApplyForce : MonoBehaviour
         }
     }
 
-
-
-    private void Update()
+    private void Start()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        StartCoroutine(WaitAndApply(20));
+    }
+
+    private IEnumerator WaitAndApply(float waitTime)
+    {
+        while (true)
         {
+            yield return new WaitForSeconds(waitTime);
             ApplyForceToJoint();
+            print("[ApplyForce]: Applyed force!");
+            waitTime = Random.Range(20, 60);
         }
     }
 
