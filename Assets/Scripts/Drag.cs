@@ -19,7 +19,7 @@ public class Drag : MonoBehaviour
         if (selectedObject)
         {
             mouseForce = (mousePosition - lastPosition) / Time.deltaTime;
-            mouseForce = Vector2.ClampMagnitude(mouseForce, maxSpeed);
+            mouseForce = Vector2.ClampMagnitude(mouseForce * 0.2f, maxSpeed);
             lastPosition = mousePosition;
         }
 
@@ -27,7 +27,7 @@ public class Drag : MonoBehaviour
         {
             Collider2D targetObject = Physics2D.OverlapPoint(mousePosition);
 
-            if (targetObject)
+            if (targetObject && targetObject.gameObject.tag != "Dont Drag")
             {
                 selectedObject = targetObject.transform.gameObject.GetComponent<Rigidbody2D>();
                 offset = selectedObject.transform.position - mousePosition;

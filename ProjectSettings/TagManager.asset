@@ -9,6 +9,7 @@ TagManager:
   - Light
   - Seeds
   - Full
+  - Dont Drag
   layers:
   - Default
   - TransparentFX
