@@ -155,5 +155,5 @@ MonoBehaviour:
   WaterAmmount: 50
   FoodAmount: 50
   FavTemperature: 30
-  FavLightColor: {r: 1, g: 0, b: 1, a: 0}
+  FavLightColor: {r: 1, g: 1, b: 1, a: 0}
   GrowthSpeed: 1

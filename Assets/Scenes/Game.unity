@@ -5687,6 +5687,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1418781377
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1418781379}
+  - component: {fileID: 1418781378}
+  m_Layer: 0
+  m_Name: DragManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1418781378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1418781377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44a2c9cd38ed63447b4155ab1b805a74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedObject: {fileID: 0}
+  maxSpeed: 5
+--- !u!4 &1418781379
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1418781377}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1446872636
 GameObject:
   m_ObjectHideFlags: 0
@@ -5961,7 +6007,6 @@ GameObject:
   - component: {fileID: 1529141462}
   - component: {fileID: 1529141466}
   - component: {fileID: 1529141465}
-  - component: {fileID: 1529141467}
   m_Layer: 0
   m_Name: Plant-1_Seed
   m_TagString: Untagged
@@ -6059,7 +6104,7 @@ Transform:
   m_GameObject: {fileID: 1529141459}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.59, y: -1.18, z: 0}
+  m_LocalPosition: {x: -2.71, y: -1.44, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6145,19 +6190,6 @@ PolygonCollider2D:
       - {x: 0.26642537, y: -0.09069049}
       - {x: 0.40095377, y: 0.15089321}
   m_UseDelaunayMesh: 0
---- !u!114 &1529141467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1529141459}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44a2c9cd38ed63447b4155ab1b805a74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsDragable: 1
 --- !u!1 &1532779840
 GameObject:
   m_ObjectHideFlags: 0
@@ -6558,7 +6590,6 @@ GameObject:
   - component: {fileID: 1680459116}
   - component: {fileID: 1680459115}
   - component: {fileID: 1680459117}
-  - component: {fileID: 1680459119}
   - component: {fileID: 1680459120}
   m_Layer: 0
   m_Name: Pot-0
@@ -6661,21 +6692,8 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
---- !u!114 &1680459119
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1680459114}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44a2c9cd38ed63447b4155ab1b805a74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsDragable: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!61 &1680459120
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7848,8 +7866,9 @@ SceneRoots:
   - {fileID: 234328200}
   - {fileID: 785850266}
   - {fileID: 259072288}
-  - {fileID: 1749796486}
-  - {fileID: 1142789314}
   - {fileID: 1255420032}
   - {fileID: 1394382392}
   - {fileID: 1529141464}
+  - {fileID: 1749796486}
+  - {fileID: 1142789314}
+  - {fileID: 1418781379}
