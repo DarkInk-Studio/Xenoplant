@@ -19,7 +19,7 @@ public class Drag : MonoBehaviour
         if (selectedObject)
         {
             mouseForce = (mousePosition - lastPosition) / Time.deltaTime;
-            mouseForce = Vector2.ClampMagnitude(mouseForce * 0.2f, maxSpeed);
+            mouseForce = Vector2.ClampMagnitude(mouseForce * 0.5f, maxSpeed);
             lastPosition = mousePosition;
         }
 

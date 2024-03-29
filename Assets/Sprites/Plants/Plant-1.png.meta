@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1a7d5f8bed09ef34eb8f5ca727faec3d
+guid: 248c25e0f6af6a8488a9fcd645ef37a7
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -17,6 +17,9 @@ TextureImporter:
   - first:
       213: -3520718493606284897
     second: Plant-1_4
+  - first:
+      213: -7096844214005865162
+    second: Plant-1_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -108,19 +111,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Plant-1_Seeds
+      name: Plant 1 6
       rect:
         serializedVersion: 2
-        x: 7
-        y: 5
-        width: 16
-        height: 22
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 8
+        y: 0
+        width: 17
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -133,13 +149,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Plant-1_1
+      name: Plant 1 5
       rect:
         serializedVersion: 2
-        x: 64
+        x: 41
         y: 0
-        width: 32
-        height: 32
+        width: 14
+        height: 28
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,13 +170,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Plant-1_2
+      name: Plant 1 4
       rect:
         serializedVersion: 2
-        x: 96
+        x: 74
         y: 0
-        width: 32
-        height: 32
+        width: 11
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,13 +191,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Plant-1_3
+      name: Plant 1 3
       rect:
         serializedVersion: 2
-        x: 128
+        x: 108
         y: 0
-        width: 32
-        height: 32
+        width: 7
+        height: 19
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,13 +212,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Plant-1_5
+      name: Plant 1 2
       rect:
         serializedVersion: 2
-        x: 160
+        x: 140
         y: 0
-        width: 32
-        height: 32
+        width: 7
+        height: 11
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -217,22 +233,43 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Plant-1_
+      name: Plant 1 1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 172
         y: 0
-        width: 32
-        height: 32
+        width: 5
+        height: 2
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 635e4edb9c1f28d90800000000000000
+      internalID: -7096844214005865162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plant 1 0
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 5
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc9b4ff0bc6cb6a43aa47a1ca38f0742
-      internalID: -175829550
+      spriteID: 5699113b2605d184589d63e3aea16e12
+      internalID: 809251472
       vertices: []
       indices: 
       edges: []
@@ -240,7 +277,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: fdb3a0e556c7d6440af4b46cf4f4db48
+    spriteID: 76bf7cd753e2b5941bd0fafaa218bedb
     internalID: 0
     vertices: []
     indices: 
@@ -248,12 +285,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Plant-1_: -175829550
-      Plant-1_1: 3247124983498497446
-      Plant-1_2: -7162835728632094998
-      Plant-1_3: -599610381736554271
-      Plant-1_5: -3520718493606284897
-      Plant-1_Seeds: -3019835679971927025
+      Plant 1 0: 809251472
+      Plant 1 1: -7096844214005865162
+      Plant 1 2: -3520718493606284897
+      Plant 1 3: -599610381736554271
+      Plant 1 4: -7162835728632094998
+      Plant 1 5: 3247124983498497446
+      Plant 1 6: -3019835679971927025
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
