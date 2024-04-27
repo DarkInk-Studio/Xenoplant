@@ -31,11 +31,9 @@ public class LampManager : MonoBehaviour
 
     private void OnMouseOver() //Check if mouse is over the Lamp
     {
-        print("hover");
         if (!available)
         {
             GetComponent<LineRenderer>().enabled = true;
-            print("Object: " + this.gameObject.name + " enabled LineRenderer");
         }
         if (Input.GetMouseButtonDown(0))
         {
@@ -50,7 +48,6 @@ public class LampManager : MonoBehaviour
     private void OnMouseExit()
     {
         GetComponent<LineRenderer>().enabled = false;
-        print("Object: " + this.gameObject.name + " desabled LineRenderer");
     }
 
     private void OnLClick()
@@ -136,7 +133,6 @@ public class LampManager : MonoBehaviour
 
                 if (curDistanceCurrent >= 15)
                 {
-                    print("Disconnect!");
                     currentAttPlant.GetComponent<PlantManager>().hasLamp = false;
                     currentAttPlant = null;
                     available = true;
