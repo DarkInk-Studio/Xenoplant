@@ -12,6 +12,8 @@ public class SeedPlanter : MonoBehaviour
         {
             collision.gameObject.tag = "Full";
             GameObject C_Plant = Instantiate(Plant, collision.transform);
+            C_Plant.transform.position += new Vector3(0, 0.35f, 0);
+            C_Plant.GetComponent<PlantManager>().SetPot(collision.gameObject.GetComponent<PotScript>().potID); // Setting the potID to the new plant
             Destroy(this.gameObject);
         }
     }

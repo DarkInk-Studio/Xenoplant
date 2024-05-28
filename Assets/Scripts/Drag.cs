@@ -27,7 +27,7 @@ public class Drag : MonoBehaviour
         {
             Collider2D targetObject = Physics2D.OverlapPoint(mousePosition);
 
-            if (targetObject && targetObject.gameObject.tag != "Dont Drag")
+            if (targetObject && targetObject.gameObject.tag != "Dont Drag" && targetObject.gameObject.tag != "Plant")
             {
                 selectedObject = targetObject.transform.gameObject.GetComponent<Rigidbody2D>();
                 offset = selectedObject.transform.position - mousePosition;

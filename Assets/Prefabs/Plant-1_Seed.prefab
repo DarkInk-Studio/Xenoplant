@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7094211756038638648}
   - component: {fileID: 3559027821074025041}
   m_Layer: 0
-  m_Name: Plant-1
+  m_Name: Plant-1_Seed
   m_TagString: Seeds
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ca4838594fdcd94a9b9649aef47e471, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Plant: {fileID: 891846045722784568}
+  Plant: {fileID: 7171278734089955076, guid: a9e7a6bb3517046489734c474f05bc98, type: 3}
 --- !u!60 &7094211756038638648
 PolygonCollider2D:
   m_ObjectHideFlags: 0

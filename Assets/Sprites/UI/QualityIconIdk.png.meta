@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8678dad25f8c4e747975f52b0e579a2b
+guid: 2d875119272d5524db37360a79dae225
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4031036718980400114
-    second: Temperature-Box_0
+      213: 4982376561078557863
+    second: QualityIconIdk_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -48,11 +48,11 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 1
   spriteExtrude: 1
-  spriteMeshType: 0
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
-  spriteBorder: {x: 5, y: 5, z: 5, w: 5}
+  spriteMeshType: 1
+  alignment: 9
+  spritePivot: {x: 0.5027778, y: 0.6277778}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Temperature-Box_0
+      name: QualityIconIdk_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,8 +127,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2f3026fd98e11f730800000000000000
-      internalID: 4031036718980400114
+      spriteID: 7acd154a515f42540800000000000000
+      internalID: 4982376561078557863
       vertices: []
       indices: 
       edges: []
@@ -144,7 +144,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Temperature-Box_0: 4031036718980400114
+      QualityIconIdk_0: 4982376561078557863
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
